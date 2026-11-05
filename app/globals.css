@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root { --background: #f4f0e8; --foreground: #181815; --border: rgba(24,24,21,.12); }
+@theme inline { --font-sans: 'Arial', sans-serif; --font-serif: 'Georgia', serif; --color-background: var(--background); --color-foreground: var(--foreground); --color-border: var(--border); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, sans-serif; }
+.eyebrow { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; }
+em { font-style: italic; font-weight: 400; }
+.field, .field-dark { display: flex; flex-direction: column; gap: 8px; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.field input, .field select { border: 0; border-bottom: 1px solid rgba(24,24,21,.2); background: transparent; padding: 8px 0; font-size: 14px; letter-spacing: 0; text-transform: none; outline: none; color: #181815; }
+.field-dark input, .field-dark select { border: 0; border-bottom: 1px solid rgba(255,255,255,.2); background: transparent; padding: 8px 0; font-size: 14px; letter-spacing: 0; text-transform: none; outline: none; color: white; }
+.field-dark option { color: #181815; }
+.payment { display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(24,24,21,.13); border-radius: 1rem; padding: 15px; text-align: left; font-size: 14px; }
+.payment-active { border-color: #b89456; background: rgba(184,148,86,.12); }
+.payment span:first-child { display: flex; flex-direction: column; gap: 5px; }
+.payment small { font-size: 11px; color: rgba(24,24,21,.5); }
+button, a { transition: all .2s ease; }
+button { cursor: pointer; }
